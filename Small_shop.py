@@ -9,7 +9,7 @@ from fontTools.voltLib.voltToFea import TABLES
 mydb=mysql.connector.connect(
     host="localhost",
     user="root",
-    password="your_password_here",
+    password="Kingdom1914!",
 )
 
 # 2. Create a cursor
@@ -39,49 +39,8 @@ INSERT INTO TRANSACTION (date,type,category,amount) VALUES
 ('2026-04-02', 'Expense', 'Salary', 1500),
 ('2026-04-03', 'Income', 'Sales', 6000),
 ('2026-04-04', 'Expense', 'Electricity', 800),
+('2026-06-28', 'Income', 'Sales', 42000)
 
-('2026-05-01', 'Expense', 'Rent', 5000),
-('2026-05-02', 'Expense', 'Salary', 15500),
-('2026-05-05', 'Expense', 'Google Ads', 8000),
-('2026-05-10', 'Expense', 'Facebook Ads', 4500),
-('2026-05-15', 'Expense', 'Electricity', 1200),
-('2026-05-20', 'Expense', 'Repair', 2500),
-('2026-05-25', 'Income', 'Sales', 35000),
-
-
-('2026-06-01', 'Expense', 'Rent', 5000),
-('2026-06-02', 'Expense', 'Salary', 15000),
-('2026-06-05', 'Expense', 'Shipping', 6000),
-('2026-06-10', 'Expense', 'Packaging', 2000),
-('2026-06-15', 'Expense', 'Warehouse Tax', 4000),
-('2026-06-20', 'Expense', 'Petrol', 3500),
-('2026-06-28', 'Income', 'Sales', 42000),
-
-('2026-07-01', 'Expense', 'Rent', 5000),
-('2026-07-02', 'Expense', 'Salary', 16000),
-('2026-07-05', 'Income', 'Sales', 55000),
-('2026-07-10', 'Expense', 'Inventory', 12000),
-('2026-07-15', 'Expense', 'Google Ads', 9000),
-('2026-07-20', 'Expense', 'Shipping', 7500),
-('2026-07-25', 'Expense', 'Electricity', 1500),
-
-('2026-08-01', 'Expense', 'Rent', 5000),
-('2026-08-02', 'Expense', 'Salary', 16000),
-('2026-08-05', 'Income', 'Sales', 20000),
-('2026-08-10', 'Expense', 'Refunds Given', 4000),
-('2026-08-15', 'Expense', 'Repair', 5000),
-('2026-08-20', 'Expense', 'Internet', 1500),
-('2026-08-25', 'Expense', 'Cleaning', 1000),
-
-
-('2026-09-01', 'Expense', 'Rent', 5000),
-('2026-09-02', 'Expense', 'Salary', 18000),
-('2026-09-05', 'Income', 'Sales', 85000),
-('2026-09-10', 'Expense', 'Marketing', 15000),
-('2026-09-15', 'Expense', 'Packaging', 5000),
-('2026-09-20', 'Expense', 'Bonus Pay', 10000),
-('2026-09-25', 'Expense', 'Electricity', 2200),
-('2026-09-30', 'Income', 'Consulting', 5000)
 """)
 
 df=pd.read_sql("SELECT * FROM Transaction",mydb)

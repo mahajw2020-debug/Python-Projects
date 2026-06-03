@@ -18,7 +18,7 @@ mydb = mysql.connector.connect(
     host="127.0.0.1",
     port=3307,
     user="root",
-    password="your_password_here",
+    password="Kingdom1914!",
     database="invoice_db"
 )
 
